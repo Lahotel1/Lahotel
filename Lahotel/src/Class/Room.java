@@ -10,7 +10,6 @@ package Class;
  * @author terkg
  */
 public abstract class Room {
-
     private String name;
     private String room_id;
     private Boolean isBook;
@@ -18,20 +17,20 @@ public abstract class Room {
     private Boolean isAddBed;
     private Boolean isAddWifi;
     private int Cost;
-
-    Room(String room_id, String day) {
+    Room(String room_id,String day)
+    {
         this.day = day;
-        this.room_id = room_id;
+        this.room_id=room_id;
         initial();
     }
-
-    private void initial() {
+    
+    private void initial(){
         this.isBook = false;
         this.isAddBed = false;
         this.isAddWifi = false;
         this.CalculateCost();
     }
-
+    
     abstract void CalculateCost();
 
     public String getName() {
@@ -89,5 +88,5 @@ public abstract class Room {
     public void setCost(int Cost) {
         this.Cost = Cost;
     }
-
+    
 }
