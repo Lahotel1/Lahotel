@@ -47,7 +47,7 @@ public class HomeController implements Initializable {
 
     @FXML
     void reservation(ActionEvent event) throws IOException {
-           FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reserve.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reserve.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         ReserveController controller = fxmlLoader.<ReserveController>getController();
         fxmlLoader.setController(controller);

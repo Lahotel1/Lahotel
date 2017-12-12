@@ -32,6 +32,12 @@ public class DataService {
         List<Account> results = query.getResultList();
         return results;
     }
+    public List<Booking> getAllBooking(){
+        String sql = "SELECT c FROM Booking c";
+        TypedQuery<Booking> query = em.createQuery(sql, Booking.class);
+        List<Booking> results = query.getResultList();
+        return results;
+    }
     public void closeConnection() {
         this.em.close();
         this.emf.close();
