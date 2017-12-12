@@ -27,7 +27,7 @@ public class Lahotel extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Reserve.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         primaryStage.setTitle("LOGIN");
         primaryStage.setScene(new Scene(root, 1280 , 720));
         primaryStage.show();
@@ -37,24 +37,24 @@ public class Lahotel extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        for (int i = 2018; i < 2019; i++) {
-           
-            for (int j = 1; j < 3; j++) {
-                if (j == 1 || j == 3 || j == 5 || j == 7 || j == 8 | j == 10 || j == 12) {
-                    for (int k = 1; k < 32; k++) {
-                        createroom(k, j, i);
-                    }
-                } else if (j == 2) {
-                    for (int k = 1; k < 29; k++) {
-                        createroom(k, j, i);
-                    }
-                } else {
-                    for (int k = 1; k < 31; k++) {
-                        createroom(k, j, i);
-                    }
-                }
-            }
-        }
+//        for (int i = 2018; i < 2019; i++) {
+//           
+//            for (int j = 1; j < 3; j++) {
+//                if (j == 1 || j == 3 || j == 5 || j == 7 || j == 8 | j == 10 || j == 12) {
+//                    for (int k = 1; k < 32; k++) {
+//                        createroom(k, j, i);
+//                    }
+//                } else if (j == 2) {
+//                    for (int k = 1; k < 29; k++) {
+//                        createroom(k, j, i);
+//                    }
+//                } else {
+//                    for (int k = 1; k < 31; k++) {
+//                        createroom(k, j, i);
+//                    }
+//                }
+//            }
+//        }
         launch(args);
 
     }
