@@ -37,8 +37,9 @@ public class Lahotel extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        for (int i = 2017; i < 2018; i++) {
-//            for (int j = 1; j < 13; j++) {
+//        for (int i = 2018; i < 2019; i++) {
+//           
+//            for (int j = 1; j < 12; j++) {
 //                if (j == 1 || j == 3 || j == 5 || j == 7 || j == 8 | j == 10 || j == 12) {
 //                    for (int k = 1; k < 32; k++) {
 //                        createroom(k, j, i);
@@ -64,15 +65,15 @@ public class Lahotel extends Application {
             _dataService.createRoom(temproom);
         }
         for (int i = 201; i < 231; i++) {
-            Room temproom = new SingleRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
+            Room temproom = new DuoRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
             _dataService.createRoom(temproom);
         }
         for (int i = 301; i < 311; i++) {
-            Room temproom = new SingleRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
+            Room temproom = new FamilyRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
             _dataService.createRoom(temproom);
         }
         for (int i = 401; i < 411; i++) {
-            Room temproom = new SingleRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
+            Room temproom = new GroupRoom(String.valueOf(i), String.valueOf(day), String.valueOf(month), String.valueOf(year));
             _dataService.createRoom(temproom);
         }
     }
