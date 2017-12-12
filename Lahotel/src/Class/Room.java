@@ -31,8 +31,8 @@ public abstract class Room {
     private Boolean isAddBed;
     private Boolean isAddWifi;
     private int Cost;
-    @ManyToMany(mappedBy = "tags")
-    private List<Account> account = new ArrayList<Account>();
+    @ManyToMany(mappedBy = "room")
+    private List<Booking> booking = new ArrayList<Booking>();
     Room(String room_id,String day,String month,String year)
     {
         this.day = day;
@@ -123,12 +123,14 @@ public abstract class Room {
         this.year = year;
     }
 
-    public List<Account> getAccount() {
-        return account;
+    public List<Booking> getBooking() {
+        return booking;
     }
 
-    public void setAccount(List<Account> account) {
-        this.account = account;
+    public void setBooking(List<Booking> booking) {
+        this.booking = booking;
     }
+
+ 
     
 }

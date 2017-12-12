@@ -33,7 +33,7 @@ public class Account implements Serializable {
     private String password;
     private String email;
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    private List<Room> room = new ArrayList<Room>();
+    private List<Booking> booking = new ArrayList<Booking>();
 
     public Account(String username, String password, String email) {
         this.username = username;
@@ -41,14 +41,14 @@ public class Account implements Serializable {
         this.email = email;
     }
     
-    public void addRoom(Room room) {
-        this.room.add(room);
-        room.getAccount().add(this);
+    public void addBooking(Booking  booking) {
+        this.booking.add(booking);
+        booking.getAccount().add(this);
     }
  
-    public void removeTag(Room room) {
-        this.room.remove(room);
-        room.getAccount().remove(this);
+    public void removeBooking(Booking booking) {
+        this.booking.remove(booking);
+        booking.getAccount().remove(this);
     }
 
     public String getUsername() {
@@ -75,12 +75,14 @@ public class Account implements Serializable {
         this.email = email;
     }
 
-    public List<Room> getRoom() {
-        return room;
+    public List<Booking> getBooking() {
+        return booking;
     }
 
-    public void setRoom(List<Room> room) {
-        this.room = room;
+    public void setBooking(List<Booking> booking) {
+        this.booking = booking;
     }
+
+    
     
 }
