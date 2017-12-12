@@ -196,7 +196,7 @@ public class ReserveController implements Initializable {
     public void showDialog(){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm your payment.");
-        Account accout = _dataService.getAccount(username);
+        Account account = _dataService.getAccount(username);
         
         int total = 0;
         for (Room room1 : booking) {
@@ -206,29 +206,23 @@ public class ReserveController implements Initializable {
         alert.setContentText(cost);
         
         Optional<ButtonType> result = alert.showAndWait();
-//        if (result.get() == ButtonType.OK) {
-//            for (Pane pane : ticket) {11
-//                for (List<Seats> seat : theater.getSeats()) {
-//                    for (Seats seats : seat) {
-//                        if (pane.getId().equals(seats.getPosition())) {
-//                            ticket_seat.add(seats);
-//                        }
-//                    }
-//                }
-//            }
-//            Report report = new Report(theater, ticket_seat, accout, cost.getText(), promotion);
-//            _dataService.createReport(report);
-//            finish();
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Timetable.fxml"));
-//            Parent root = (Parent) fxmlLoader.load();
-//            Splitpane.getItems().setAll(root);
-//           
-//        } else {
-//            setTheaterID(theater_id, theater_index);
-//        }
+        if (result.get() == ButtonType.OK) {
+                _dataService.transactionBegin();
+                for (Room room1 : booking) {
+                    room1.setIsBook(true);
+            }
+                account.addBooking(new Booking(account,booking));
+                _dataService.transactionCommit();
+
+            
+           
+        } else {
+            System.out.println("Fail");
+        }
     }
     public void confirm(){
-        
+        if(!singleroom_text.getText().equals("")&&!person.getText().equals(""))
+            System.out.println("");;
     }
     @FXML
     void Back(ActionEvent event) throws IOException {
