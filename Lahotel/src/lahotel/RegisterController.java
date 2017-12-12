@@ -5,6 +5,7 @@
  */
 package lahotel;
 
+import Class.DataService;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -40,7 +41,8 @@ public class RegisterController implements Initializable {
     @FXML
     private TextField username;
 
-     
+    DataService _dataService = new DataService();
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -72,6 +74,7 @@ public class RegisterController implements Initializable {
           
     }
     public void success() throws IOException{
+         
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root = (Parent) fxmlLoader.load();
          LoginController controller = fxmlLoader.<LoginController>getController();
