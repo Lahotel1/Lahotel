@@ -13,5 +13,8 @@ public class Booking {
     private String name;
     private String roomtype;
     private String startdate;
-    private
+    private String enddate;
+    private String isBed;
+    private String isWifi;
+    private String Status;
 }
