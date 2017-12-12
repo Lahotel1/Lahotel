@@ -31,7 +31,8 @@ public class HomeController implements Initializable {
 
     @FXML
     private Button history;
-
+    
+    String username;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
@@ -52,6 +53,9 @@ public class HomeController implements Initializable {
         ReserveController controller = fxmlLoader.<ReserveController>getController();
         fxmlLoader.setController(controller);
         backpane.getChildren().setAll(root);
+    }
+    public void getAccount(String user){
+        this.username=user;
     }
 
 }
