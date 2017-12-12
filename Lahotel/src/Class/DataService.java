@@ -17,7 +17,7 @@ import javax.persistence.TypedQuery;
  */
 public class DataService {
 
-    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("database/Movie.odb");
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("database/lahotel.odb");
     private EntityManager em;
 
     public DataService() {
@@ -26,6 +26,13 @@ public class DataService {
         //System.out.println("DataBase is Connecting..");
     }
     
+    public List<Room> getRoomFormDay(String day,String month,String year )
+    {
+        String sql = "SELECT c FROM Room c Where c.day = '" + day + "' AND c.month = '" + month +"' AND c.year = '" + year + "'";
+        TypedQuery<Room> query = em.createQuery(sql, Room.class);
+        List<Room> results = query.getResultList();
+        return results;
+    }
     public List<Account> getAllAccount(){
         String sql = "SELECT c FROM Account c";
         TypedQuery<Account> query = em.createQuery(sql, Account.class);
@@ -35,6 +42,13 @@ public class DataService {
     public void closeConnection() {
         this.em.close();
         this.emf.close();
+    }
+    
+    public Account getAccount(String username){
+        String sql = "SELECT c FROM Accountt c Where c.username = '" + username + "'";
+        TypedQuery<Account> query = em.createQuery(sql, Account.class);
+        List<Account> results = query.getResultList();
+        return results.get(0);
     }
     public void createAccout(Account account){
         this.em.getTransaction().begin();

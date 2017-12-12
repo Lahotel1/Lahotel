@@ -5,31 +5,232 @@
  */
 package lahotel;
 
+import Class.*;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 /**
  *
  * @author terkg
  */
 public class ReserveController implements Initializable {
-     @FXML
+
+    @FXML
     private AnchorPane backpane;
+
+    @FXML
+    private DatePicker enddate;
+
+    @FXML
+    private DatePicker startdate;
+
+    @FXML
+    private Button checkavailable;
+
+    @FXML
+    private Label singleroom_text;
+
+    @FXML
+    private Label duoroom_text;
+
+    @FXML
+    private Label familyroom_text;
+
+    @FXML
+    private Label grouproom_text;
+
+    @FXML
+    private ComboBox single_selector;
+
+    @FXML
+    private ComboBox duo_selector;
+
+    @FXML
+    private ComboBox family_selector;
+
+    @FXML
+    private ComboBox group_selector;
+
+    @FXML
+    private Button confirm;
+
+    @FXML
+    private CheckBox wifi_check;
+
+    @FXML
+    private CheckBox bed_check;
     
-     @Override
+    @FXML
+    private TextField person;
+
+    DataService _dataService = new DataService();
+    List<List<Room>> room = new ArrayList<List<Room>>();
+    List<Room> booking = new ArrayList<Room>();
+    String username;
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
+
     }
     
-     @FXML
+    public void setAccount(String username){
+        this.username = username;
+    }
+    
+    @FXML
+    void checkAvalable(ActionEvent event) {
+        
+        Boolean canCal = false;
+        room.clear();
+        List<Room> temp = new ArrayList<Room>();
+        for (Room room1 : temp) {
+            System.out.println(room1.getName());
+        }
+        if (startdate.getValue() != null && startdate.getValue() != null) {
+            if (enddate.getValue().getYear() > startdate.getValue().getYear()) {
+                canCal = true;
+            } else if (enddate.getValue().getYear() == startdate.getValue().getYear()) {
+                if (enddate.getValue().getDayOfYear() >= startdate.getValue().getDayOfYear()) {
+                    canCal = true;
+                }
+            }
+        }
+        if (canCal == true) {
+            int max = 0;
+            if (enddate.getValue().getMonth() == startdate.getValue().getMonth()) {
+                for (int i = startdate.getValue().getDayOfMonth(); i <= enddate.getValue().getDayOfMonth(); i++) {
+                    temp = _dataService.getRoomFormDay(String.valueOf(i), String.valueOf(startdate.getValue().getMonthValue()), String.valueOf(startdate.getValue().getYear()));
+                    room.add(temp);
+                }
+            } else {
+
+                if (startdate.getValue().getMonthValue() == 1 || startdate.getValue().getMonthValue() == 3 || startdate.getValue().getMonthValue() == 5 || startdate.getValue().getMonthValue() == 7 || startdate.getValue().getMonthValue() == 8 | startdate.getValue().getMonthValue() == 10 || startdate.getValue().getMonthValue() == 12) {
+                    max = 31;
+                } else if (startdate.getValue().getMonthValue() == 2) {
+                    max = 28;
+                } else {
+                    max = 30;
+                }
+                for (int i = startdate.getValue().getDayOfMonth(); i <= max; i++) {
+                    temp = _dataService.getRoomFormDay(String.valueOf(i), String.valueOf(startdate.getValue().getMonthValue()), String.valueOf(startdate.getValue().getYear()));
+                    room.add(temp);
+                }
+                for (int i = 1; i <= enddate.getValue().getDayOfMonth(); i++) {
+                    temp = _dataService.getRoomFormDay(String.valueOf(i), String.valueOf(enddate.getValue().getMonthValue()), String.valueOf(enddate.getValue().getYear()));
+                    room.add(temp);
+                }
+            }
+
+            for (int i = room.get(0).size() - 1; i > 0; i--) {
+                Boolean full = false;
+                for (List<Room> list : room) {
+                    if (list.get(i).getIsBook() == true) {
+                        full = true;
+                        break;
+                    }
+                }
+                if (full == true) {
+                    for (List<Room> list : room) {
+                        list.remove(list.get(i));
+                    }
+                }
+            }
+            int single_room = 0;
+            int duo_room = 0;
+            int family_room = 0;
+            int group_room = 0;
+
+            for (Room room1 : room.get(0)) {
+                if (room1.getName().equals("SingleRoom")) {
+                    single_room++;
+                } else if (room1.getName().equals("DuoRoom")) {
+                    duo_room++;
+                } else if (room1.getName().equals("FamilyRoom")) {
+                    family_room++;
+                } else {
+                    group_room++;
+                }
+            }
+            for (int i = 0;i <= single_room  ; i++) {
+                single_selector.getItems().add(String.valueOf(i));
+               
+            }
+            for (int i = 0; i <= duo_room; i++) {
+                duo_selector.getItems().add(String.valueOf(i));
+            }
+            for (int i = 0; i <= family_room; i++) {
+                family_selector.getItems().add(String.valueOf(i));
+            }
+            for (int i = 0; i < group_room; i++) {
+                group_selector.getItems().add(String.valueOf(i));
+            }
+            single_selector.getSelectionModel().selectFirst();
+            duo_selector.getSelectionModel().selectFirst();
+            family_selector.getSelectionModel().selectFirst();
+            group_selector.getSelectionModel().selectFirst();
+            singleroom_text.setText(single_room + " Rooms");
+            duoroom_text.setText(duo_room + " Rooms");
+            familyroom_text.setText(family_room + " Rooms");
+            grouproom_text.setText(group_room + " Rooms");
+        } else {
+            singleroom_text.setText("");
+            duoroom_text.setText("");
+            familyroom_text.setText("");
+            grouproom_text.setText("");
+        }
+    }
+    
+    public void showDialog(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirm your payment.");
+        Account accout = _dataService.getAccount(username);
+        
+        int total = 0;
+        for (Room room1 : booking) {
+            total+=room1.getCost();
+        }
+        String cost = (String.format("COST : %d",total));
+        alert.setContentText(cost);
+        
+        Optional<ButtonType> result = alert.showAndWait();
+//        if (result.get() == ButtonType.OK) {
+//            for (Pane pane : ticket) {11
+//                for (List<Seats> seat : theater.getSeats()) {
+//                    for (Seats seats : seat) {
+//                        if (pane.getId().equals(seats.getPosition())) {
+//                            ticket_seat.add(seats);
+//                        }
+//                    }
+//                }
+//            }
+//            Report report = new Report(theater, ticket_seat, accout, cost.getText(), promotion);
+//            _dataService.createReport(report);
+//            finish();
+//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Timetable.fxml"));
+//            Parent root = (Parent) fxmlLoader.load();
+//            Splitpane.getItems().setAll(root);
+//           
+//        } else {
+//            setTheaterID(theater_id, theater_index);
+//        }
+    }
+    public void confirm(){
+        
+    }
+    @FXML
     void Back(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
         Parent root = (Parent) fxmlLoader.load();
@@ -37,6 +238,5 @@ public class ReserveController implements Initializable {
         fxmlLoader.setController(controller);
         backpane.getChildren().setAll(root);
     }
-    
-   
+
 }

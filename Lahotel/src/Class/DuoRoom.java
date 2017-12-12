@@ -23,10 +23,10 @@ public class DuoRoom extends Room {
     public void CalculateCost() {
         int temp_cost = 2000;
         if (this.getIsAddBed() == true) {
-            temp_cost += 300;
+            temp_cost += 500;
         }
         if (this.getIsAddWifi() == true) {
-            temp_cost += 500;
+            temp_cost += 300;
         }
         super.setCost(temp_cost);
     }

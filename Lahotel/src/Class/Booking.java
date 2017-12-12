@@ -27,7 +27,7 @@ public class Booking implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private String roomtype;
+    private String roomtype = "";
     private String startdate;
     private String enddate;
     private String isBed;
@@ -42,7 +42,10 @@ public class Booking implements Serializable {
 
     public Booking(Account account, List<Room> room) {
         this.name = account.getEmail();
-        this.roomtype = room.get(0).getName();
+        for (Room room1 : room) {
+            this.roomtype = this.roomtype.concat(room1.getName()+":"+room1.getRoom_id()+"\n");
+        }
+        
         this.startdate = room.get(0).getDay() + "/" + room.get(0).getMonth() + "/" + room.get(0).getYear();
         this.enddate = room.get(room.size() - 1).getDay() + "/" + room.get(room.size() - 1).getMonth() + "/" + room.get(room.size() - 1).getYear();
         if (room.get(0).getIsAddBed() == true) {

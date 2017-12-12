@@ -25,10 +25,10 @@ public class GroupRoom extends Room {
     public void CalculateCost() {
         int temp_cost = 4000;
         if (this.getIsAddBed() == true) {
-            temp_cost += 300;
+            temp_cost += 500;
         }
         if (this.getIsAddWifi() == true) {
-            temp_cost += 500;
+            temp_cost += 300;
         }
         super.setCost(temp_cost);
     }

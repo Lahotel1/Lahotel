@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="backpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lahotel.ReserveController">
+<AnchorPane fx:id="backpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lahotel.ReserveController">
    <children>
       <AnchorPane prefHeight="359.0" prefWidth="1280.0" style="-fx-background-color: #bbe5f4;" />
       <ImageView fitHeight="359.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
@@ -28,25 +21,11 @@
             <Image url="@../images/Hhome.gif" />
          </image>
       </ImageView>
-      <Text fill="#b5b5b5" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Room Type" textAlignment="CENTER" wrappingWidth="1280.0000175833702" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.7583370208740234E-5">
+      <Text layoutX="494.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking" textAlignment="CENTER" wrappingWidth="267.0">
          <font>
-            <Font name="Quantify-Bold" size="54.0" />
+            <Font size="27.0" />
          </font>
       </Text>
-      <Text layoutX="-3.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Room Type" textAlignment="CENTER" wrappingWidth="1280.0">
-         <font>
-            <Font name="Quantify-Bold" size="54.0" />
-         </font>
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#18c7d0" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Text>
-      <ComboBox layoutX="565.0" layoutY="436.0" prefWidth="150.0" />
       <VBox prefHeight="58.0" prefWidth="341.0" spacing="15.0">
          <children>
             <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a Start Date">
@@ -56,51 +35,46 @@
             </Text>
          </children>
       </VBox>
-      <VBox layoutX="101.0" layoutY="603.0" prefHeight="58.0" prefWidth="341.0" spacing="15.0">
+      <VBox layoutX="126.0" layoutY="521.0" prefHeight="60.0" prefWidth="215.0" spacing="15.0">
          <children>
             <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter an End Date">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <DatePicker />
+            <DatePicker fx:id="enddate" />
          </children>
       </VBox>
-      <HBox layoutX="442.0" layoutY="661.0" prefHeight="25.0" prefWidth="418.0" spacing="300.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="65.0" text="Back" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Confirm" />
-         </children>
-      </HBox>
-      <VBox layoutX="694.0" layoutY="491.0" prefHeight="154.0" prefWidth="380.0" spacing="10.0">
-         <children>
-            <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Optional">
-               <font>
-                  <Font name="Quantify-Bold" size="37.0" />
-               </font>
-            </Text>
-            <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast 200฿ Per Person" />
-            <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinner 300฿ Per Person" />
-            <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Bed 100฿" />
-            <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Wifi 150฿" />
-         </children>
-      </VBox>
-      <VBox layoutX="667.0" layoutY="542.0" prefHeight="111.0" prefWidth="19.0" spacing="8.0">
-         <children>
-            <CheckBox mnemonicParsing="false" />
-            <CheckBox mnemonicParsing="false" />
-            <CheckBox mnemonicParsing="false" />
-            <CheckBox mnemonicParsing="false" />
-         </children></VBox>
-      <VBox layoutX="101.0" layoutY="508.0" prefHeight="58.0" prefWidth="341.0" spacing="15.0">
+      <VBox layoutX="126.0" layoutY="454.0" prefHeight="59.0" prefWidth="215.0" spacing="15.0">
          <children>
             <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter an Start Date">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <DatePicker />
+            <DatePicker fx:id="startdate" />
          </children>
       </VBox>
+      <Button fx:id="checkavailable" layoutX="145.0" layoutY="607.0" mnemonicParsing="false" onAction="#checkAvalable" stylesheets="@../css/ipadbutton.css" text="Check Available Room" />
+      <Label layoutX="479.0" layoutY="483.0" prefHeight="17.0" prefWidth="162.0" text="SINGLE ROOM AVAILABLE" />
+      <Label layoutX="479.0" layoutY="513.0" prefHeight="17.0" prefWidth="162.0" text="DUO ROOM AVAILABLE" />
+      <Label layoutX="479.0" layoutY="542.0" prefHeight="17.0" prefWidth="162.0" text="FAMILY ROOM AVAILABLE" />
+      <Label layoutX="479.0" layoutY="573.0" prefHeight="17.0" prefWidth="155.0" text="GROUP ROOM AVAILABLE" />
+      <Label fx:id="singleroom_text" layoutX="634.0" layoutY="483.0" prefHeight="16.0" prefWidth="71.0" />
+      <Label fx:id="duoroom_text" layoutX="634.0" layoutY="513.0" prefHeight="17.0" prefWidth="71.0" />
+      <Label fx:id="familyroom_text" layoutX="634.0" layoutY="542.0" prefHeight="17.0" prefWidth="71.0" />
+      <Label fx:id="grouproom_text" layoutX="634.0" layoutY="573.0" prefHeight="17.0" prefWidth="71.0" />
+      <ComboBox fx:id="single_selector" layoutX="743.0" layoutY="479.0" prefHeight="25.0" prefWidth="59.0" />
+      <ComboBox fx:id="duo_selector" layoutX="743.0" layoutY="509.0" prefHeight="25.0" prefWidth="59.0" />
+      <ComboBox fx:id="family_selector" layoutX="743.0" layoutY="538.0" prefHeight="25.0" prefWidth="59.0" />
+      <ComboBox fx:id="group_selector" layoutX="743.0" layoutY="569.0" prefHeight="25.0" prefWidth="59.0" />
+      <Button fx:id="confirm" layoutX="1186.0" layoutY="681.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0" prefWidth="80.0" text="CONFIRM" />
+      <Button layoutX="14.0" layoutY="366.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="65.0" text="Back" />
+      <CheckBox fx:id="wifi_check" layoutX="1056.0" layoutY="505.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="155.0" text="WIFI ( 300 BATH)" />
+      <CheckBox fx:id="bed_check" layoutX="1056.0" layoutY="530.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="162.0" text="1 MORE BED ( 500 BATH)" />
+      <Label layoutX="1105.0" layoutY="475.0" text="OPTIONAL" />
+      <Label layoutX="754.0" layoutY="446.0" text="ROOM" />
+      <Label layoutX="1011.0" layoutY="565.0" text="PERSON" />
+      <TextField fx:id="person" layoutX="1063.0" layoutY="561.0" />
    </children>
 </AnchorPane>

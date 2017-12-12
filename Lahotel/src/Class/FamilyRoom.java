@@ -25,9 +25,9 @@ public class FamilyRoom extends Room{
     public void CalculateCost() {
         int temp_cost =3000;
         if(this.getIsAddBed()==true)
-            temp_cost+=300;
-        if(this.getIsAddWifi()==true)
             temp_cost+=500;
+        if(this.getIsAddWifi()==true)
+            temp_cost+=300;
         super.setCost(temp_cost); 
     }
     

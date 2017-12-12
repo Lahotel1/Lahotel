@@ -27,7 +27,7 @@ public class Lahotel extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Reserve.fxml"));
         primaryStage.setTitle("LOGIN");
         primaryStage.setScene(new Scene(root, 1280 , 720));
         primaryStage.show();
@@ -39,7 +39,7 @@ public class Lahotel extends Application {
     public static void main(String[] args) {
 //        for (int i = 2018; i < 2019; i++) {
 //           
-//            for (int j = 1; j < 12; j++) {
+//            for (int j = 1; j < 3; j++) {
 //                if (j == 1 || j == 3 || j == 5 || j == 7 || j == 8 | j == 10 || j == 12) {
 //                    for (int k = 1; k < 32; k++) {
 //                        createroom(k, j, i);
