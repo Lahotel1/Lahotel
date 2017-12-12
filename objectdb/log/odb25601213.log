@@ -59,3 +59,26 @@ Caused by: com.objectdb.o.UserException: Attempt to open a database file 'C:\Use
 [2560-12-13 01:12:23 #3 store] 
 Database 'C:\Users\mix\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 30904@mormix
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 02:28:57 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 3-32855)
+
+[2560-12-13 02:28:57 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 9412@DESKTOP-KCNIK4J
+
+[2560-12-13 02:28:57 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 02:28:59 #4 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-12-13 02:28:59 #5 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-12-13 02:28:59 #6 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-12-13 02:30:59 #7 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 9412@DESKTOP-KCNIK4J
+

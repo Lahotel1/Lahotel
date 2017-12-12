@@ -49,7 +49,7 @@ public abstract class Room {
         this.CalculateCost();
     }
     
-    abstract void CalculateCost();
+    abstract public void CalculateCost();
 
     public String getName() {
         return name;

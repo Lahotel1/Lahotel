@@ -22,7 +22,7 @@ public class FamilyRoom extends Room{
  
 
     @Override
-    void CalculateCost() {
+    public void CalculateCost() {
         int temp_cost =3000;
         if(this.getIsAddBed()==true)
             temp_cost+=300;

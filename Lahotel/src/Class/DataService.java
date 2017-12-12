@@ -41,6 +41,11 @@ public class DataService {
         this.em.persist(account);
         this.em.getTransaction().commit();
     }
+    public void createRoom(Room room){
+        this.em.getTransaction().begin();
+        this.em.persist(room);
+        this.em.getTransaction().commit();
+    }
     public void transactionBegin() {
         this.em.getTransaction().begin();
     }
