@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package lahotel;
+import Class.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -36,7 +37,7 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        DataService _dataService = new DataService();
     }
 
     @FXML
@@ -46,7 +47,7 @@ public class LoginController implements Initializable {
 
     @FXML
     void Register(ActionEvent event) throws IOException {
-          FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Register.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         RegisterController controller = fxmlLoader.<RegisterController>getController();
         fxmlLoader.setController(controller);
