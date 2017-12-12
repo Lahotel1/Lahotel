@@ -5,6 +5,7 @@
  */
 package lahotel;
 
+import Class.*;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -35,6 +36,7 @@ public class Lahotel extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
     }
     
 }
