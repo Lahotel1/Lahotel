@@ -39,24 +39,26 @@ public class HomeController implements Initializable {
 
     @FXML
     void history(ActionEvent event) throws IOException {
-           FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("History.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("History.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         HistoryController controller = fxmlLoader.<HistoryController>getController();
         fxmlLoader.setController(controller);
-         controller.getAccount(username);
+        System.out.println(username);
+         controller.setAccount(username);
+         controller.show(username);
         backpane.getChildren().setAll(root);
     }
 
     @FXML
     void reservation(ActionEvent event) throws IOException {
-           FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reserve.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reserve.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         ReserveController controller = fxmlLoader.<ReserveController>getController();
         fxmlLoader.setController(controller);
-         controller.getAccount(username);
+         //controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
-    public void getAccount(String user){
+    public void setAccount(String user){
         this.username=user;
     }
 

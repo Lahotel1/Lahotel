@@ -55,6 +55,7 @@ public class Lahotel extends Application {
 //                }
 //            }
 //        }
+    
         launch(args);
 
     }

@@ -47,9 +47,13 @@ public class HistoryController implements Initializable {
      @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-//          List<Booking> report = _dataService.getAllBooking();
-//        System.out.println(report);
-//        data = FXCollections.observableArrayList(report);
+        
+    }
+    public void show(String username){
+        Account account = _dataService.getAccount(username);
+        List<Booking> report = account.getBooking();
+        System.out.println(report);
+        data = FXCollections.observableArrayList(report);
 
         
         TableColumn idCol = new TableColumn("ID");
@@ -112,11 +116,11 @@ public class HistoryController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
-        controller.getAccount(username);
+        controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
     
-    public void getAccount(String username){
+    public void setAccount(String username){
         this.username=username;
     }
 }

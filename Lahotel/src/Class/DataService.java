@@ -45,9 +45,10 @@ public class DataService {
     }
     
     public Account getAccount(String username){
-        String sql = "SELECT c FROM Accountt c Where c.username = '" + username + "'";
+        String sql = "SELECT c FROM Account c Where c.username = '" + username + "'";
         TypedQuery<Account> query = em.createQuery(sql, Account.class);
         List<Account> results = query.getResultList();
+        
         return results.get(0);
     }
     public void createAccout(Account account){
