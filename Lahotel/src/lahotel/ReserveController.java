@@ -13,11 +13,11 @@ import javafx.fxml.Initializable;
  *
  * @author terkg
  */
-public class ResearveController implements Initializable {
+public class ReserveController implements Initializable {
     
      @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        
     }
 }
