@@ -41,6 +41,8 @@ public class HistoryController implements Initializable {
      
        @FXML
     private AnchorPane backpane;
+      
+    String username;
 
      @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -110,6 +112,11 @@ public class HistoryController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
+        controller.getAccount(username);
         backpane.getChildren().setAll(root);
+    }
+    
+    public void getAccount(String username){
+        this.username=username;
     }
 }
