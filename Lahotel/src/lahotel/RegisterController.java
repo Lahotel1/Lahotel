@@ -22,25 +22,28 @@ import javafx.scene.layout.AnchorPane;
  */
 public class RegisterController implements Initializable {
 
+      @FXML
+    private PasswordField password;
+ 
+       @FXML
+    private Label alertlabel;
+       
     @FXML
-    private TextField username;
+    private AnchorPane backpane;
 
     @FXML
-    private TextField password;
-
-    @FXML
-    private TextField confirmpassword;
+    private PasswordField confirmpassword;
 
     @FXML
     private TextField email;
-    
-     @FXML
-    private AnchorPane backpane;
+
+    @FXML
+    private TextField username;
+
      
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
     }
 
     @FXML
@@ -54,14 +57,25 @@ public class RegisterController implements Initializable {
 
     @FXML
     void register(ActionEvent event) throws IOException {
-        
+        if(!username.getText().equals("")&&!password.getText().equals("")&&!confirmpassword.getText().equals("")&&!email.getText().equals(""))
+        {        
+            if(password.getText().equals(confirmpassword.getText())){
+               alertlabel.setText(" "); 
+                success();
+            }
+            else
+                alertlabel.setText("password not match");
+                
+        }       
+        else
+                alertlabel.setText("please put information");
+          
+    }
+    public void success() throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root = (Parent) fxmlLoader.load();
          LoginController controller = fxmlLoader.<LoginController>getController();
         fxmlLoader.setController(controller);
         backpane.getChildren().setAll(root);
-    }
-    public void success(){
-        
     }
 }

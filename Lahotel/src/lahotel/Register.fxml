@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -13,13 +14,14 @@
       <Label layoutX="286.0" layoutY="78.0" text="Username" />
       <Label layoutX="288.0" layoutY="159.0" text="Password" />
       <TextField fx:id="username" layoutX="403.0" layoutY="74.0" />
-      <TextField fx:id="password" layoutX="403.0" layoutY="155.0" />
       <Label layoutX="288.0" layoutY="199.0" text="Confirm Password" />
-      <TextField fx:id="confirmpassword" layoutX="403.0" layoutY="195.0" />
       <Button layoutX="418.0" layoutY="243.0" mnemonicParsing="false" onAction="#register" text="Register" />
       <Label layoutX="286.0" layoutY="116.0" text="Email" />
       <TextField fx:id="email" layoutX="403.0" layoutY="112.0" />
       <Button layoutX="499.0" layoutY="243.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <PasswordField fx:id="password" layoutX="403.0" layoutY="155.0" />
+      <PasswordField fx:id="confirmpassword" layoutX="404.0" layoutY="195.0" />
+      <Label fx:id="alertlabel" layoutX="379.0" layoutY="44.0" maxWidth="1000.0" prefHeight="17.0" prefWidth="253.0" textFill="RED" />
    </children>
 </AnchorPane>
