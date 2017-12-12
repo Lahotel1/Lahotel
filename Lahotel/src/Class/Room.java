@@ -14,12 +14,16 @@ public abstract class Room {
     private String room_id;
     private Boolean isBook;
     private String day;
+    private String month;
+    private String year;
     private Boolean isAddBed;
     private Boolean isAddWifi;
     private int Cost;
-    Room(String room_id,String day)
+    Room(String room_id,String day,String month,String year)
     {
         this.day = day;
+        this.month = month;
+        this.year = year;
         this.room_id=room_id;
         initial();
     }

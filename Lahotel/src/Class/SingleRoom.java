@@ -10,11 +10,13 @@ package Class;
  * @author terkg
  */
 public class SingleRoom extends Room{
-    
-    public SingleRoom(String room_id, String day) {
-        super(room_id, day);
+
+    public SingleRoom(String room_id, String day, String month, String year) {
+        super(room_id, day, month, year);
         super.setName("SingleRoom");
     }
+    
+
 
     @Override
     void CalculateCost() {

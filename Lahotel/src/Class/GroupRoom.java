@@ -11,10 +11,12 @@ package Class;
  */
 public class GroupRoom extends Room {
 
-    public GroupRoom(String room_id, String day) {
-        super(room_id, day);
+    public GroupRoom(String room_id, String day, String month, String year) {
+        super(room_id, day, month, year);
         super.setName("GroupRoom");
     }
+
+
 
     @Override
     void CalculateCost() {
