@@ -79,9 +79,9 @@ public class LoginController implements Initializable {
     }
 
     public void success() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
         Parent root = (Parent) fxmlLoader.load();
-        RegisterController controller = fxmlLoader.<RegisterController>getController();
+        HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
         backpane.getChildren().setAll(root);
     }
