@@ -7,17 +7,36 @@ package lahotel;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
 /**
  *
  * @author terkg
  */
 public class HomeController implements Initializable {
-    
-     @Override
+
+    // TODO
+    @FXML
+    private Button reservation;
+
+    @FXML
+    private Button history;
+
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    }
+
+    @FXML
+    void history(ActionEvent event) {
 
     }
+
+    @FXML
+    void reservation(ActionEvent event) {
+
+    }
+
 }
