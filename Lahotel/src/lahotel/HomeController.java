@@ -43,7 +43,7 @@ public class HomeController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HistoryController controller = fxmlLoader.<HistoryController>getController();
         fxmlLoader.setController(controller);
-         controller.getAccount(username);
+         controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
 
@@ -53,7 +53,7 @@ public class HomeController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         ReserveController controller = fxmlLoader.<ReserveController>getController();
         fxmlLoader.setController(controller);
-         controller.getAccount(username);
+         controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
     public void getAccount(String user){

@@ -72,7 +72,7 @@ public class ReserveController implements Initializable {
 
     @FXML
     private CheckBox bed_check;
-    
+
     @FXML
     private TextField person;
 
@@ -80,19 +80,20 @@ public class ReserveController implements Initializable {
     List<List<Room>> room = new ArrayList<List<Room>>();
     List<Room> booking = new ArrayList<Room>();
     String username;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
 
     }
-    
-    public void setAccount(String username){
+
+    public void setAccount(String username) {
         this.username = username;
     }
-    
+
     @FXML
     void checkAvalable(ActionEvent event) {
-        
+
         Boolean canCal = false;
         room.clear();
         List<Room> temp = new ArrayList<Room>();
@@ -164,9 +165,8 @@ public class ReserveController implements Initializable {
                     group_room++;
                 }
             }
-            for (int i = 0;i <= single_room  ; i++) {
+            for (int i = 0; i <= single_room; i++) {
                 single_selector.getItems().add(String.valueOf(i));
-               
             }
             for (int i = 0; i <= duo_room; i++) {
                 duo_selector.getItems().add(String.valueOf(i));
@@ -192,38 +192,97 @@ public class ReserveController implements Initializable {
             grouproom_text.setText("");
         }
     }
-    
-    public void showDialog(){
+
+    public void showDialog() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm your payment.");
         Account account = _dataService.getAccount(username);
-        
+
         int total = 0;
+        String cost ="";
         for (Room room1 : booking) {
-            total+=room1.getCost();
+            cost = cost.concat(String.format("Day : %s/%s/%s Type : %-20s Cost : %d\n",room1.getDay(),room1.getMonth(),room1.getYear(),room1.getName(),room1.getCost()));
+            total += room1.getCost();
         }
-        String cost = (String.format("COST : %d",total));
+        cost = cost.concat(String.format("Member : %s   ",person.getText() ));
+       cost = cost.concat(String.format("COST : %d", total));
         alert.setContentText(cost);
-        
+
         Optional<ButtonType> result = alert.showAndWait();
         if (result.get() == ButtonType.OK) {
-                _dataService.transactionBegin();
-                for (Room room1 : booking) {
-                    room1.setIsBook(true);
+            _dataService.transactionBegin();
+            for (Room room1 : booking) {
+                room1.setIsBook(true);
             }
-                account.addBooking(new Booking(account,booking));
-                _dataService.transactionCommit();
+            account.addBooking(new Booking(account, booking));
+            _dataService.transactionCommit();
 
-            
-           
         } else {
             System.out.println("Fail");
         }
     }
-    public void confirm(){
-        if(!singleroom_text.getText().equals("")&&!person.getText().equals(""))
-            System.out.println("");;
+
+    public void confirm() {
+        booking.clear();
+        if (!singleroom_text.getText().equals("") && !person.getText().equals("")) {
+
+            for (List<Room> list : room) {
+                for (int i =0 ;i<list.size()-1;i++) {
+                    if (list.get(i).getName().equals("SingleRoom")) {
+                        for (int j = 0; j < Integer.parseInt(single_selector.getValue()+""); j++) {
+                            booking.add(list.get(j+i));
+                        }
+                        break;
+                    }
+                }
+            }
+            for (List<Room> list : room) {
+                for (int i =0 ;i<list.size()-1;i++) {
+                    if (list.get(i).getName().equals("DuoRoom")) {
+                        for (int j = 0; j < Integer.parseInt(duo_selector.getValue()+""); j++) {
+                            booking.add(list.get(j+i));
+                        }
+                        break;
+                    }
+                }
+            }
+            for (List<Room> list : room) {
+                for (int i =0 ;i<list.size()-1;i++) {
+                    if (list.get(i).getName().equals("FamilyRoom")) {
+                        for (int j = 0; j < Integer.parseInt(family_selector.getValue()+""); j++) {
+                            booking.add(list.get(j+i));
+                        }
+                        break;
+                    }
+                }
+            }
+            for (List<Room> list : room) {
+                for (int i =0 ;i<list.size()-1;i++) {
+                    if (list.get(i).getName().equals("GroupRoom")) {
+                        for (int j = 0; j < Integer.parseInt(group_selector.getValue()+""); j++) {
+                            booking.add(list.get(j+i));
+                        }
+                        break;
+                    }
+                }
+            }
+            
+            if(bed_check.isSelected()==true)
+            {
+                for (Room room1 : booking) {
+                    room1.setIsAddBed(true);
+                }
+            }
+            if(wifi_check.isSelected()==true)
+            {
+                for (Room room1 : booking) {
+                    room1.setIsAddWifi(true);
+                }
+            }
+            showDialog();
+        } 
     }
+
     @FXML
     void Back(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));

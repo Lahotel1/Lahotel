@@ -19,8 +19,10 @@ import javax.persistence.ManyToMany;
  */
 @Entity
 public abstract class Room {
+
     private static final long serialVersionUID = 1L;
-    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private String room_id;
@@ -33,22 +35,22 @@ public abstract class Room {
     private int Cost;
     @ManyToMany(mappedBy = "room")
     private List<Booking> booking = new ArrayList<Booking>();
-    Room(String room_id,String day,String month,String year)
-    {
+
+    Room(String room_id, String day, String month, String year) {
         this.day = day;
         this.month = month;
         this.year = year;
-        this.room_id=room_id;
+        this.room_id = room_id;
         initial();
     }
-    
-    private void initial(){
+
+    private void initial() {
         this.isBook = false;
         this.isAddBed = false;
         this.isAddWifi = false;
         this.CalculateCost();
     }
-    
+
     abstract public void CalculateCost();
 
     public String getName() {
@@ -85,10 +87,13 @@ public abstract class Room {
 
     public Boolean getIsAddBed() {
         return isAddBed;
+
     }
 
     public void setIsAddBed(Boolean isAddBed) {
+
         this.isAddBed = isAddBed;
+        this.CalculateCost();
     }
 
     public Boolean getIsAddWifi() {
@@ -97,6 +102,8 @@ public abstract class Room {
 
     public void setIsAddWifi(Boolean isAddWifi) {
         this.isAddWifi = isAddWifi;
+        this.CalculateCost();
+
     }
 
     public int getCost() {
@@ -131,6 +138,4 @@ public abstract class Room {
         this.booking = booking;
     }
 
- 
-    
 }

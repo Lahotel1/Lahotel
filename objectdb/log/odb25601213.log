@@ -196,3 +196,42 @@ Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.co
 [2560-12-13 04:22:41 #3 store] 
 Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 12868@DESKTOP-KCNIK4J
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 06:04:00 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 7092@DESKTOP-KCNIK4J
+
+[2560-12-13 06:04:00 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 06:04:06 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 7092@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 06:31:05 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 5322-5324)
+
+[2560-12-13 06:31:05 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 9448@DESKTOP-KCNIK4J
+
+[2560-12-13 06:31:05 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 06:31:49 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 9448@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 06:49:51 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 5325-5325)
+
+[2560-12-13 06:49:51 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 1044@DESKTOP-KCNIK4J
+
+[2560-12-13 06:49:51 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 06:50:09 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 1044@DESKTOP-KCNIK4J
+

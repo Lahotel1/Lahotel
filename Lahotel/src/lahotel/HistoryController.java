@@ -116,7 +116,7 @@ public class HistoryController implements Initializable {
         backpane.getChildren().setAll(root);
     }
     
-    public void getAccount(String username){
+    public void setAccount(String username){
         this.username=username;
     }
 }
