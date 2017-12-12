@@ -5,9 +5,11 @@
  */
 package Class;
 
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 /**
  *
@@ -23,7 +25,13 @@ public class DataService {
         this.em = emf.createEntityManager();
         //System.out.println("DataBase is Connecting..");
     }
-
+    
+    public List<Account> getAllAccount(){
+        String sql = "SELECT c FROM Account c";
+        TypedQuery<Account> query = em.createQuery(sql, Account.class);
+        List<Account> results = query.getResultList();
+        return results;
+    }
     public void closeConnection() {
         this.em.close();
         this.emf.close();
