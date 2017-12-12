@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-09 18:19:22 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 7084@DESKTOP-KCNIK4J
+
+[2560-12-09 18:19:22 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-12-09 18:19:37 #3 type.registry] 
+New type java.lang.Object[]
+
+[2560-12-09 18:35:31 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 7084@DESKTOP-KCNIK4J
+

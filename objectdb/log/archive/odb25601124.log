@@ -1,0 +1,260 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 00:49:44 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 9892@DESKTOP-KCNIK4J
+
+[2560-11-24 00:49:44 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 00:49:46 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 9892@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 00:49:54 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 16052@DESKTOP-KCNIK4J
+
+[2560-11-24 00:49:54 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 00:49:59 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 00:49:59 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 00:49:59 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 00:53:05 #6 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 16052@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 01:03:49 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 16336@DESKTOP-KCNIK4J
+
+[2560-11-24 01:03:49 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 01:03:52 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 01:03:52 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 01:03:52 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 01:05:12 #6 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 16336@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 01:05:26 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 6464@DESKTOP-KCNIK4J
+
+[2560-11-24 01:05:26 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 01:05:40 #3 type.registry] 
+New type java.lang.Object[]
+
+[2560-11-24 01:05:48 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 6464@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 01:26:14 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 2124@DESKTOP-KCNIK4J
+
+[2560-11-24 01:26:14 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 01:26:16 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 01:26:16 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 01:26:16 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 01:27:06 #6 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 2124@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 01:27:19 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 11404@DESKTOP-KCNIK4J
+
+[2560-11-24 01:27:19 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 01:27:27 #3 type.registry] 
+New type java.lang.Object[]
+
+[2560-11-24 01:28:33 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 11404@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 01:32:01 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 12980@DESKTOP-KCNIK4J
+
+[2560-11-24 01:32:01 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 01:32:43 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 12980@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 02:40:49 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 13784@DESKTOP-KCNIK4J
+
+[2560-11-24 02:40:49 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 02:40:51 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 02:40:51 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 02:40:51 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 02:47:38 #6 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 13784@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 03:24:01 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 10-11)
+
+[2560-11-24 03:24:01 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 14788@DESKTOP-KCNIK4J
+
+[2560-11-24 03:24:01 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 03:30:21 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 14788@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 03:31:06 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 20-21)
+
+[2560-11-24 03:31:06 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 9180@DESKTOP-KCNIK4J
+
+[2560-11-24 03:31:06 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 03:31:08 #4 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 03:31:08 #5 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 03:31:08 #6 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 03:31:10 #7 type.registry] 
+New type java.lang.Object[]
+
+[2560-11-24 03:31:23 #8 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 9180@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 03:31:46 #1 explorer] 
+[ObjectDB 2.7.2_08] javax.persistence.PersistenceException
+Attempt to open a database file 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' that is currently in use by another process (error 141)
+	at com.objectdb.Explorer$1.run(Explorer.java:57)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: com.objectdb.o.UserException: Attempt to open a database file 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' that is currently in use by another process
+	at com.objectdb.o.MSG.a(MSG.java:64)
+	at com.objectdb.o.LFL.J(LFL.java:930)
+	at com.objectdb.o.LFL.x(LFL.java:887)
+	at com.objectdb.o.LFL.x(LFL.java:797)
+	at com.objectdb.o.DFL.<init>(DFL.java:241)
+	at com.objectdb.o.DMG.<init>(DMG.java:27)
+	at com.objectdb.o.MST.<init>(MST.java:127)
+	at com.objectdb.o.MST.ao(MST.java:109)
+	at com.objectdb.o.MSF.Y1(MSF.java:190)
+	at com.objectdb.o.OMF.r(OMF.java:783)
+	at com.objectdb.jpa.EMF.r(EMF.java:130)
+	at com.objectdb.o.OMF.w(OMF.java:694)
+	at com.objectdb.jpa.EMF.createEntityManager(EMF.java:149)
+	... 17 more
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 03:31:59 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 10988@DESKTOP-KCNIK4J
+
+[2560-11-24 03:31:59 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 03:32:02 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 03:32:02 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 03:32:02 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 03:36:55 #6 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 10988@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 03:38:20 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 8944@DESKTOP-KCNIK4J
+
+[2560-11-24 03:38:20 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 03:38:21 #3 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-11-24 03:38:21 #4 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-11-24 03:38:21 #5 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-11-24 03:38:24 #6 type.registry] 
+New type java.lang.Object[]
+
+[2560-11-24 03:38:29 #7 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 8944@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-24 04:33:12 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 11448@DESKTOP-KCNIK4J
+
+[2560-11-24 04:33:12 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-11-24 04:33:45 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 11448@DESKTOP-KCNIK4J
+

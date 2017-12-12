@@ -5,10 +5,13 @@
  */
 package Class;
 
+import javax.persistence.MappedSuperclass;
+
 /**
  *
  * @author terkg
  */
+@MappedSuperclass
 public class SingleRoom extends Room{
 
     public SingleRoom(String room_id, String day, String month, String year) {
