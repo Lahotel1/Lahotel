@@ -1,0 +1,92 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-12 15:12:59 #1 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 73-75)
+
+[2560-12-12 15:12:59 #2 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 16388@DESKTOP-R5U8ELA
+
+[2560-12-12 15:12:59 #3 store] 
+Configuration path: C:\Users\Sivakorn\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-12 15:13:04 #1 explorer] 
+[ObjectDB 2.7.2_08] javax.persistence.PersistenceException
+Attempt to open a database file 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' that is currently in use by another process (error 141)
+	at com.objectdb.Explorer$1.run(Explorer.java:57)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue.access$500(Unknown Source)
+	at java.desktop/java.awt.EventQueue$3.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$3.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: com.objectdb.o.UserException: Attempt to open a database file 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' that is currently in use by another process
+	at com.objectdb.o.MSG.a(MSG.java:64)
+	at com.objectdb.o.LFL.J(LFL.java:930)
+	at com.objectdb.o.LFL.x(LFL.java:887)
+	at com.objectdb.o.LFL.x(LFL.java:797)
+	at com.objectdb.o.DFL.<init>(DFL.java:241)
+	at com.objectdb.o.DMG.<init>(DMG.java:27)
+	at com.objectdb.o.MST.<init>(MST.java:127)
+	at com.objectdb.o.MST.ao(MST.java:109)
+	at com.objectdb.o.MSF.Y1(MSF.java:190)
+	at com.objectdb.o.OMF.r(OMF.java:783)
+	at com.objectdb.jpa.EMF.r(EMF.java:130)
+	at com.objectdb.o.OMF.w(OMF.java:694)
+	at com.objectdb.jpa.EMF.createEntityManager(EMF.java:149)
+	... 17 more
+
+[2560-12-12 15:15:28 #4 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 16388@DESKTOP-R5U8ELA
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-12 15:25:58 #1 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 72-74)
+
+[2560-12-12 15:25:58 #2 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 6564@DESKTOP-R5U8ELA
+
+[2560-12-12 15:25:58 #3 store] 
+Configuration path: C:\Users\Sivakorn\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-12-12 15:26:08 #4 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 6564@DESKTOP-R5U8ELA
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-12 15:27:49 #1 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 72-74)
+
+[2560-12-12 15:27:49 #2 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 3896@DESKTOP-R5U8ELA
+
+[2560-12-12 15:27:49 #3 store] 
+Configuration path: C:\Users\Sivakorn\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-12-12 15:28:00 #4 store] 
+Database 'C:\Users\Sivakorn\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 3896@DESKTOP-R5U8ELA
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-12 19:26:50 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' has been recovered (tr. 75-76)
+
+[2560-12-12 19:26:50 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is opened by 2648@DESKTOP-KCNIK4J
+
+[2560-12-12 19:26:50 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\MovieBooking\objectdb\objectdb.conf
+
+[2560-12-12 19:27:18 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\MovieBooking\MovieBookingFx\database\Movie.odb' is closed by 2648@DESKTOP-KCNIK4J
+

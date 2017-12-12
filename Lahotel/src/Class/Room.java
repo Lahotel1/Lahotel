@@ -5,11 +5,23 @@
  */
 package Class;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
 /**
  *
  * @author terkg
  */
+@Entity
 public abstract class Room {
+    private static final long serialVersionUID = 1L;
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private long id;
     private String name;
     private String room_id;
     private Boolean isBook;
@@ -19,6 +31,8 @@ public abstract class Room {
     private Boolean isAddBed;
     private Boolean isAddWifi;
     private int Cost;
+    @ManyToMany(mappedBy = "tags")
+    private List<Account> account = new ArrayList<Account>();
     Room(String room_id,String day,String month,String year)
     {
         this.day = day;
@@ -91,6 +105,30 @@ public abstract class Room {
 
     public void setCost(int Cost) {
         this.Cost = Cost;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public List<Account> getAccount() {
+        return account;
+    }
+
+    public void setAccount(List<Account> account) {
+        this.account = account;
     }
     
 }
