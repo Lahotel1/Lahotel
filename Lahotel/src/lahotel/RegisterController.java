@@ -5,6 +5,7 @@
  */
 package lahotel;
 
+import Class.Account;
 import Class.DataService;
 import java.io.IOException;
 import java.net.URL;
@@ -74,7 +75,8 @@ public class RegisterController implements Initializable {
           
     }
     public void success() throws IOException{
-         
+        Account account=new Account(username.getText(),password.getText(),email.getText());
+        _dataService.createAccout(account);
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root = (Parent) fxmlLoader.load();
          LoginController controller = fxmlLoader.<LoginController>getController();
