@@ -82,3 +82,26 @@ New type com.objectdb.o.RFV
 [2560-12-13 02:30:59 #7 store] 
 Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 9412@DESKTOP-KCNIK4J
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 02:57:39 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 2799-2799)
+
+[2560-12-13 02:57:39 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 3192@DESKTOP-KCNIK4J
+
+[2560-12-13 02:57:39 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 02:57:41 #4 type.registry] 
+New type com.objectdb.o.LMT
+
+[2560-12-13 02:57:41 #5 type.registry] 
+New type com.objectdb.o.VAL
+
+[2560-12-13 02:57:41 #6 type.registry] 
+New type com.objectdb.o.RFV
+
+[2560-12-13 02:58:03 #7 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 3192@DESKTOP-KCNIK4J
+

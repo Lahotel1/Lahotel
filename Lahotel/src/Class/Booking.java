@@ -34,6 +34,7 @@ public class Booking implements Serializable {
     private String isWifi;
     private String status;
     private Boolean isCheckin;
+    private int person;
     @ManyToMany(mappedBy = "booking")
     private List<Account> account = new ArrayList<Account>();
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
@@ -141,6 +142,22 @@ public class Booking implements Serializable {
 
     public void setRoom(List<Room> room) {
         this.room = room;
+    }
+
+    public Boolean getIsCheckin() {
+        return isCheckin;
+    }
+
+    public void setIsCheckin(Boolean isCheckin) {
+        this.isCheckin = isCheckin;
+    }
+
+    public int getPerson() {
+        return person;
+    }
+
+    public void setPerson(int person) {
+        this.person = person;
     }
 
 }
