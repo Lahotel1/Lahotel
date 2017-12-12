@@ -5,19 +5,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lahotel.HomeController">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1460.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0">
          <image>
-            <Image url="@../pic/DPCM-home-710px×350px.jpg" />
+            <Image url="@../images/DPCM-home-710px×350px.jpg" />
          </image>
       </ImageView>
       <JFXButton id="ipad-dark-grey" layoutX="220.0" layoutY="195.0" stylesheets="@../css/ipadbutton.css" text="Reservation" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="400.0" />
       <JFXButton id="ipad-dark-grey" layoutX="239.0" layoutY="285.0" stylesheets="@../css/ipadbutton.css" text="History" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="500.0" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="565.0" AnchorPane.topAnchor="150.0">
          <image>
-            <Image url="@../pic/atomix_user31.png" />
+            <Image url="@../images/atomix_user31.png" />
          </image>
       </ImageView>
    </children>
