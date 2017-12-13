@@ -193,7 +193,7 @@ public class ReserveController implements Initializable {
         }
     }
 
-    public void showDialog() {
+    public void showDialog() throws IOException {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm your payment.");
         Account account = _dataService.getAccount(username);
@@ -216,13 +216,14 @@ public class ReserveController implements Initializable {
             }
             account.addBooking(new Booking(account, booking));
             _dataService.transactionCommit();
+            success();
 
         } else {
             System.out.println("Fail");
         }
     }
 
-    public void confirm() {
+    public void confirm() throws IOException {
         booking.clear();
         if (!singleroom_text.getText().equals("") && !person.getText().equals("")) {
 
@@ -289,7 +290,17 @@ public class ReserveController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
+        controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
-
+    
+   
+    public void success() throws IOException  {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        HomeController controller = fxmlLoader.<HomeController>getController();
+        fxmlLoader.setController(controller);
+        controller.setAccount(username);
+        backpane.getChildren().setAll(root);
+    }
 }

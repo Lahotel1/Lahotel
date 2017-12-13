@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -31,6 +32,9 @@ public class HomeController implements Initializable {
 
     @FXML
     private Button history;
+    
+    @FXML
+    private Label name;
     
     String username;
     @Override
@@ -58,8 +62,18 @@ public class HomeController implements Initializable {
          controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
+    
+    @FXML
+    void logout(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        LoginController controller = fxmlLoader.<LoginController>getController();
+        fxmlLoader.setController(controller);
+        backpane.getChildren().setAll(root);
+    }
     public void setAccount(String user){
         this.username=user;
+        name.setText(user);
     }
 
 }
