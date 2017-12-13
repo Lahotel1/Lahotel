@@ -14,7 +14,7 @@
             <Font size="33.0" />
          </font>
       </Label>
-      <Button layoutX="1167.0" layoutY="681.0" mnemonicParsing="false" text="CANCEL" />
+      <Button layoutX="1167.0" layoutY="681.0" mnemonicParsing="false" onAction="#confirm" text="CANCEL" />
       <Button layoutX="16.0" layoutY="22.0" mnemonicParsing="false" onAction="#Mainmenu" text="MAIN MENU" />
    </children>
 </AnchorPane>

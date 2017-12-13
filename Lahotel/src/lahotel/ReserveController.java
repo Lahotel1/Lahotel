@@ -139,7 +139,7 @@ public class ReserveController implements Initializable {
                 }
             }
 
-            for (int i = room.get(0).size() - 1; i > 0; i--) {
+            for (int i = room.get(0).size() - 1; i >= 0; i--) {
                 Boolean full = false;
                 for (List<Room> list : room) {
                     if (list.get(i).getIsBook() == true) {
@@ -178,7 +178,7 @@ public class ReserveController implements Initializable {
             for (int i = 0; i <= family_room; i++) {
                 family_selector.getItems().add(String.valueOf(i));
             }
-            for (int i = 0; i < group_room; i++) {
+            for (int i = 0; i <= group_room; i++) {
                 group_selector.getItems().add(String.valueOf(i));
             }
             single_selector.getSelectionModel().selectFirst();
@@ -225,7 +225,7 @@ public class ReserveController implements Initializable {
             
         }
         cost = cost.concat(String.format("Member : %s   ",person.getText() ));
-       cost = cost.concat(String.format("COST : %d", total));
+        cost = cost.concat(String.format("COST : %d", total));
         alert.setContentText(cost);
 
         Optional<ButtonType> result = alert.showAndWait();
@@ -241,8 +241,6 @@ public class ReserveController implements Initializable {
             _dataService.transactionCommit();
             success();
 
-        } else {
-            System.out.println("Fail");
         }
     }
 
