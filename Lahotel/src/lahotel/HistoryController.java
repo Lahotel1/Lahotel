@@ -47,9 +47,13 @@ public class HistoryController implements Initializable {
      @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-//          List<Booking> report = _dataService.getAllBooking();
-//        System.out.println(report);
-//        data = FXCollections.observableArrayList(report);
+        
+    }
+    public void show(String username){
+        Account account = _dataService.getAccount(username);
+        List<Booking> report = account.getBooking();
+        System.out.println(report);
+        data = FXCollections.observableArrayList(report);
 
         
         TableColumn idCol = new TableColumn("ID");
@@ -58,22 +62,22 @@ public class HistoryController implements Initializable {
                 new PropertyValueFactory<Booking, String>("id"));
 
         TableColumn nameCol = new TableColumn("Name");
-        nameCol.setMinWidth(315);
+        nameCol.setMinWidth(355);
         nameCol.setCellValueFactory(
                 new PropertyValueFactory<Booking, String>("name"));
 
         TableColumn roomtypeCol = new TableColumn("Roomtype");
-        roomtypeCol.setMinWidth(175);
+        roomtypeCol.setMinWidth(200);
         roomtypeCol.setCellValueFactory(
                 new PropertyValueFactory<Booking, String>("roomtype"));
 
         TableColumn startdateCol = new TableColumn("Startdate");
-        startdateCol.setMinWidth(165);
+        startdateCol.setMinWidth(200);
         startdateCol.setCellValueFactory(
                 new PropertyValueFactory<Booking, String>("startdate"));
         
         TableColumn enddateCOl = new TableColumn("Enddate");
-        enddateCOl.setMinWidth(165);
+        enddateCOl.setMinWidth(200);
         enddateCOl.setCellValueFactory(
                 new PropertyValueFactory<Booking, String>("enddate"));
         
@@ -84,7 +88,7 @@ public class HistoryController implements Initializable {
                 new PropertyValueFactory<Booking, String>("isBed"));
         
         TableColumn isWifiCol = new TableColumn("Wifi");
-        isWifiCol.setMinWidth(20);
+        isWifiCol.setMinWidth(30);
         isWifiCol.setCellValueFactory(
                 new PropertyValueFactory<Booking, String>("isWifi"));
            
@@ -112,7 +116,7 @@ public class HistoryController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
-        controller.getAccount(username);
+        controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
     

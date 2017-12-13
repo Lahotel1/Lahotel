@@ -83,7 +83,7 @@ public class LoginController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
         fxmlLoader.setController(controller);
-         controller.getAccount(inputuser.getText());
+         controller.setAccount(inputuser.getText());
         backpane.getChildren().setAll(root);
     }
 }

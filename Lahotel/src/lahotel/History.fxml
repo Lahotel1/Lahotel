@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lahotel.HistoryController">
+<AnchorPane fx:id="backpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lahotel.HistoryController">
    <children>
-      <VBox layoutX="24.0" layoutY="90.0" prefHeight="611.0" prefWidth="1231.0" />
+      <VBox fx:id="vbox" layoutX="24.0" layoutY="90.0" prefHeight="611.0" prefWidth="1231.0" />
+      <Button fx:id="Mainmenu" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#Mainmenu" text="Main Menu" />
+      <Label layoutX="585.0" layoutY="40.0" prefHeight="43.0" prefWidth="119.0" text="HISTORY" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
