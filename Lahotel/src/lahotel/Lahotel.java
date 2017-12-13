@@ -55,9 +55,11 @@ public class Lahotel extends Application {
 //                        createroom(k, j, i);
 //                    }
 //                }
+//                System.out.println(j);
 //            }
+//            
 //        }
-    
+//    
         launch(args);
 
     }
