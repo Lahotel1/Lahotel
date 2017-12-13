@@ -5,10 +5,12 @@
  */
 package lahotel;
 
-import Class.*;
-import java.awt.Button;
+import Class.Account;
+import Class.Booking;
+import Class.DataService;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -31,28 +33,31 @@ import javafx.scene.layout.VBox;
  *
  * @author terkg
  */
-public class HistoryController implements Initializable {
+public class BookingController implements Initializable {
 
-    private TableView<Booking> table = new TableView<Booking>();
-    private ObservableList<Booking> data;
-    private DataService _dataService = new DataService();
-
-    private String username;
     @FXML
     private VBox vbox;
 
     @FXML
     private AnchorPane backpane;
+    private String username;
+    private TableView<Booking> table = new TableView<Booking>();
+    private ObservableList<Booking> data;
+    private DataService _dataService = new DataService();
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-
+    public void initialize(URL location, ResourceBundle resources) {
+        //To change body of generated methods, choose Tools | Templates.
     }
 
     public void show(String username) {
         Account account = _dataService.getAccount(username);
-        List<Booking> report = account.getBooking();
+        List<Booking> temp = account.getBooking();
+        List<Booking> report = new ArrayList<Booking>();
+        for (Booking booking : temp) {
+            if(booking.getStatus().equals("WAITING"))
+                report.add(booking);       
+        }
         data = FXCollections.observableArrayList(report);
 
         TableColumn idCol = new TableColumn("ID");
@@ -138,3 +143,4 @@ public class HistoryController implements Initializable {
         this.username = username;
     }
 }
+

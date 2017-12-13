@@ -34,13 +34,14 @@ public class Booking implements Serializable {
     private String isWifi;
     private String status;
     private Boolean isCheckin;
+    private int cost;
     private int person;
     @ManyToMany(mappedBy = "booking")
     private List<Account> account = new ArrayList<Account>();
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Room> room = new ArrayList<Room>();
 
-    public Booking(Account account, List<Room> room,int person) {
+    public Booking(Account account, List<Room> room,int person,int cost) {
         this.name = account.getEmail();
         List<Room> temp = new ArrayList<Room>();
         for (Room room1 : room) {
@@ -51,7 +52,7 @@ public class Booking implements Serializable {
                     break;
                 }
             }
-            if(canAdd == true)
+            if(canAdd == false)
             {
              temp.add(room1);
             }
@@ -73,15 +74,18 @@ public class Booking implements Serializable {
             this.isWifi = "NO";
         }
         this.isCheckin = false;
-        this.status = "NO";
+        this.status = "WAITING";
         this.person = person;
+        this.cost = cost;
     }
 
     public void checkin() {
         this.isCheckin = true;
-        this.status = "YES";
+        this.status = "CHECKIN";
     }
-
+    public void cancel(){
+        this.status = "CANCEL";
+    }
     public void addRoom(Room room) {
         this.room.add(room);
         room.getBooking().add(this);
@@ -178,6 +182,14 @@ public class Booking implements Serializable {
 
     public void setPerson(int person) {
         this.person = person;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
 }

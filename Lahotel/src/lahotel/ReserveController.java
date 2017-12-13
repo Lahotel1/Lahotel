@@ -201,12 +201,28 @@ public class ReserveController implements Initializable {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm your payment.");
         Account account = _dataService.getAccount(username);
-
+        List<Room> temp = new ArrayList<Room>();
+        for (Room room1 : booking) {
+            Boolean canAdd = false;
+            for (Room room2 : temp) {
+                if (room1.getRoom_id().equals(room2.getRoom_id())) {
+                    canAdd = true;
+                    break;
+                }
+            }
+            if(canAdd == false)
+            {
+             temp.add(room1);
+            }
+        }
         int total = 0;
         String cost ="";
         for (Room room1 : booking) {
-            cost = cost.concat(String.format("Day : %s/%s/%s Type : %-20s Cost : %d\n",room1.getDay(),room1.getMonth(),room1.getYear(),room1.getName(),room1.getCost()));
             total += room1.getCost();
+        }
+        for (Room room1 : temp) {
+            cost = cost.concat(String.format("Room_ID: %-5s Type : %-10s Cost : %d PERDAY\n",room1.getRoom_id(),room1.getName(),room1.getCost()));
+            
         }
         cost = cost.concat(String.format("Member : %s   ",person.getText() ));
        cost = cost.concat(String.format("COST : %d", total));
@@ -218,7 +234,7 @@ public class ReserveController implements Initializable {
             for (Room room1 : booking) {
                 room1.setIsBook(true);
             }
-            account.addBooking(new Booking(account, booking,Integer.parseInt(person.getText())));
+            account.addBooking(new Booking(account, booking,Integer.parseInt(person.getText()),total));
             for (Room room1 : booking) {
                 account.getBooking().get(account.getBooking().size()-1).addRoom(room1);
             }
