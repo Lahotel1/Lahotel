@@ -50,7 +50,7 @@
                   <Button id="ipad-dark-grey" mnemonicParsing="false" onAction="#back" stylesheets="@../css/ipadbutton.css" text="Back" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="170.0" />
                   <PasswordField fx:id="password" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="100.0" />
                   <PasswordField fx:id="confirmpassword" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="130.0" />
-                  <Label fx:id="alertlabel" maxWidth="1000.0" prefHeight="17.0" prefWidth="253.0" textFill="RED" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="160.0" />
+                  <Label fx:id="alertlabel" layoutX="149.0" layoutY="14.0" maxWidth="1000.0" prefHeight="17.0" prefWidth="165.0" textFill="RED" AnchorPane.leftAnchor="149.0" AnchorPane.topAnchor="14.0" />
                </children>
             </AnchorPane>
          </children>

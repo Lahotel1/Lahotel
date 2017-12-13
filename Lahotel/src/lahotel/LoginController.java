@@ -67,7 +67,7 @@ public class LoginController implements Initializable {
                     label.setText("put information");
                 }
                    else
-                label.setText("incorrect");
+                    label.setText("incorrect");
             }
                
         }
