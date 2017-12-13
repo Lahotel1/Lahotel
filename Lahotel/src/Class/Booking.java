@@ -92,8 +92,9 @@ public class Booking implements Serializable {
     }
 
     public void removeRoom(Room room) {
-        this.room.remove(room);
         room.getBooking().remove(this);
+        this.room.remove(room);
+        
     }
 
     public String getName() {
@@ -190,6 +191,14 @@ public class Booking implements Serializable {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
 }

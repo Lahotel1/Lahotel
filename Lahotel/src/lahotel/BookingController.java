@@ -8,10 +8,12 @@ package lahotel;
 import Class.Account;
 import Class.Booking;
 import Class.DataService;
+import Class.Room;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -21,6 +23,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
@@ -44,6 +48,7 @@ public class BookingController implements Initializable {
     private TableView<Booking> table = new TableView<Booking>();
     private ObservableList<Booking> data;
     private DataService _dataService = new DataService();
+    private Booking clicked;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -51,12 +56,14 @@ public class BookingController implements Initializable {
     }
 
     public void show(String username) {
+        vbox.getChildren().clear();
         Account account = _dataService.getAccount(username);
         List<Booking> temp = account.getBooking();
         List<Booking> report = new ArrayList<Booking>();
         for (Booking booking : temp) {
-            if(booking.getStatus().equals("WAITING"))
-                report.add(booking);       
+            if (booking.getStatus().equals("WAITING")) {
+                report.add(booking);
+            }
         }
         data = FXCollections.observableArrayList(report);
 
@@ -117,8 +124,8 @@ public class BookingController implements Initializable {
                 if (!row.isEmpty() && event.getButton() == MouseButton.PRIMARY
                         && event.getClickCount() == 1) {
 
-                    Booking clickedRow = row.getItem();
-                    //System.out.println(clickedRow.getId());
+                    clicked = row.getItem();
+
                 }
             });
             return row;
@@ -127,6 +134,29 @@ public class BookingController implements Initializable {
         vbox.setPadding(new Insets(10, 0, 0, 10));
         vbox.getChildren().addAll(table);
 
+    }
+
+    @FXML
+    public void confirm(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Are you sure?");
+        Account account = clicked.getAccount().get(0);
+        List<Room> temp = new ArrayList<Room>();
+        temp = clicked.getRoom();
+        String cost = String.format("Booking_ID : %-5s StartDate : %-10s EndDate : %-10s\n%-20s Total : %d", clicked.getId() + "", clicked.getStartdate(), clicked.getEnddate(), clicked.getCost());
+        alert.setContentText(cost);
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK) {
+            _dataService.transactionBegin();
+            for (Room room : temp) {
+                room.setIsBook(false);
+            }
+            clicked.setStatus("CANCEL");
+            for (int i = 0; i < temp.size()-1; i++) {
+                clicked.removeRoom(temp.get(0));
+            }
+            _dataService.transactionCommit();
+        }
     }
 
     @FXML
@@ -143,4 +173,3 @@ public class BookingController implements Initializable {
         this.username = username;
     }
 }
-
