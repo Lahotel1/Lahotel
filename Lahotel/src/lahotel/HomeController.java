@@ -59,7 +59,7 @@ public class HomeController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         ReserveController controller = fxmlLoader.<ReserveController>getController();
         fxmlLoader.setController(controller);
-         controller.setAccount(username);
+        controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
     
@@ -69,6 +69,25 @@ public class HomeController implements Initializable {
         Parent root = (Parent) fxmlLoader.load();
         LoginController controller = fxmlLoader.<LoginController>getController();
         fxmlLoader.setController(controller);
+        backpane.getChildren().setAll(root);
+    }
+    
+    @FXML
+    void showdetail(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        LoginController controller = fxmlLoader.<LoginController>getController();
+        fxmlLoader.setController(controller);
+        backpane.getChildren().setAll(root);
+    }
+    
+     @FXML
+    void Booking(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Booking.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        BookingController controller = fxmlLoader.<BookingController>getController();
+        fxmlLoader.setController(controller);
+        controller.setAccount(username);
         backpane.getChildren().setAll(root);
     }
     public void setAccount(String user){

@@ -23,13 +23,15 @@
             <Image url="@../images/atomix_user31.png" />
          </image>
       </ImageView>
-      <Button id="ipad-dark-grey" fx:id="reservation" layoutX="550.0" layoutY="398.0" mnemonicParsing="false" onAction="#reservation" stylesheets="@../css/ipadbutton.css" text="Reservation" />
-      <Button id="ipad-dark-grey" fx:id="history" layoutX="550.0" layoutY="499.0" mnemonicParsing="false" onAction="#history" prefHeight="57.0" prefWidth="160.0" stylesheets="@../css/ipadbutton.css" text="History" />
-      <Button id="ipad-dark-grey" fx:id="logout" layoutX="1098.0" layoutY="629.0" mnemonicParsing="false" onAction="#logout" stylesheets="@../css/ipadbutton.css" text="Logout" />
+      <Button id="ipad-dark-grey" fx:id="reservation" layoutX="561.0" layoutY="398.0" mnemonicParsing="false" onAction="#reservation" stylesheets="@../css/ipadbutton.css" text="Reservation" />
+      <Button id="ipad-dark-grey" fx:id="Booking" layoutX="564.0" layoutY="549.0" mnemonicParsing="false" onAction="#Booking" prefHeight="57.0" prefWidth="160.0" stylesheets="@../css/ipadbutton.css" text="Booking" />
+      <Button id="ipad-dark-grey" fx:id="logout" layoutX="1144.0" layoutY="651.0" mnemonicParsing="false" onAction="#logout" stylesheets="@../css/ipadbutton.css" text="Logout" />
       <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="592.0" layoutY="313.0" prefHeight="32.0" prefWidth="97.0" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
+      <Button id="ipad-dark-grey" fx:id="showdetail" layoutX="562.0" layoutY="472.0" mnemonicParsing="false" onAction="#showdetail" prefHeight="57.0" prefWidth="160.0" stylesheets="@../css/ipadbutton.css" text="Showdetail" />
+      <Button id="ipad-dark-grey" fx:id="history1" layoutX="565.0" layoutY="626.0" mnemonicParsing="false" onAction="#history" prefHeight="57.0" prefWidth="160.0" stylesheets="@../css/ipadbutton.css" text="History" />
    </children>
 </AnchorPane>
