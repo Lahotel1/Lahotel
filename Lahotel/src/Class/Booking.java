@@ -41,7 +41,7 @@ public class Booking implements Serializable {
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Room> room = new ArrayList<Room>();
 
-    public Booking(Account account, List<Room> room,int person,int cost) {
+    public Booking(Account account, List<Room> room, int person, int cost) {
         this.name = account.getEmail();
         List<Room> temp = new ArrayList<Room>();
         for (Room room1 : room) {
@@ -52,9 +52,8 @@ public class Booking implements Serializable {
                     break;
                 }
             }
-            if(canAdd == false)
-            {
-             temp.add(room1);
+            if (canAdd == false) {
+                temp.add(room1);
             }
         }
         for (Room room1 : temp) {
@@ -83,18 +82,19 @@ public class Booking implements Serializable {
         this.isCheckin = true;
         this.status = "CHECKIN";
     }
-    public void cancel(){
+
+    public void cancel() {
         this.status = "CANCEL";
     }
+
     public void addRoom(Room room) {
         this.room.add(room);
         room.getBooking().add(this);
     }
 
     public void removeRoom(Room room) {
-        room.getBooking().remove(this);
         this.room.remove(room);
-        
+        room.getBooking().remove(this);
     }
 
     public String getName() {
