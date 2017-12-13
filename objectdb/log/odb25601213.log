@@ -311,3 +311,329 @@ New type java.lang.Object[]
 [2560-12-13 07:29:49 #5 store] 
 Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 10608@DESKTOP-KCNIK4J
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:05:47 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35655-35655)
+
+[2560-12-13 10:05:47 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 6320@DESKTOP-KCNIK4J
+
+[2560-12-13 10:05:47 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:06:31 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 6320@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:12:40 #1 server] 
+Server on port 6136 has started by 2208@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:12:47 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35650-35655)
+
+[2560-12-13 10:12:47 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 6468@DESKTOP-KCNIK4J
+
+[2560-12-13 10:12:47 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:15:59 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 6468@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:16:29 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35650-35655)
+
+[2560-12-13 10:16:29 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 8972@DESKTOP-KCNIK4J
+
+[2560-12-13 10:16:29 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:16:41 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 8972@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:25:39 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35650-35655)
+
+[2560-12-13 10:25:39 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 1400@DESKTOP-KCNIK4J
+
+[2560-12-13 10:25:39 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:26:00 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 1400@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:26:41 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 2704@DESKTOP-KCNIK4J
+
+[2560-12-13 10:26:41 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:26:59 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 2704@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:31:43 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35655-35655)
+
+[2560-12-13 10:31:43 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 11284@DESKTOP-KCNIK4J
+
+[2560-12-13 10:31:43 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:31:49 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 11284@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:33:31 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 1348@DESKTOP-KCNIK4J
+
+[2560-12-13 10:33:31 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:33:38 #3 type.registry] 
+New type java.lang.Object[]
+
+[2560-12-13 10:34:15 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 1348@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:37:50 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35660-35660)
+
+[2560-12-13 10:37:50 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 11068@DESKTOP-KCNIK4J
+
+[2560-12-13 10:37:50 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:38:41 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 11068@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:40:56 #1 explorer] 
+[ObjectDB 2.7.2_08] javax.persistence.PersistenceException
+Attempt to open a database file 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' that is currently in use by another process (error 141)
+	at com.objectdb.Explorer$1.run(Explorer.java:57)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: com.objectdb.o.UserException: Attempt to open a database file 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' that is currently in use by another process
+	at com.objectdb.o.MSG.a(MSG.java:64)
+	at com.objectdb.o.LFL.J(LFL.java:930)
+	at com.objectdb.o.LFL.x(LFL.java:887)
+	at com.objectdb.o.LFL.x(LFL.java:797)
+	at com.objectdb.o.DFL.<init>(DFL.java:241)
+	at com.objectdb.o.DMG.<init>(DMG.java:27)
+	at com.objectdb.o.MST.<init>(MST.java:127)
+	at com.objectdb.o.MST.ao(MST.java:109)
+	at com.objectdb.o.MSF.Y1(MSF.java:190)
+	at com.objectdb.o.OMF.r(OMF.java:783)
+	at com.objectdb.jpa.EMF.r(EMF.java:130)
+	at com.objectdb.o.OMF.w(OMF.java:694)
+	at com.objectdb.jpa.EMF.createEntityManager(EMF.java:149)
+	... 17 more
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:41:13 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35664-35665)
+
+[2560-12-13 10:41:13 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 9444@DESKTOP-KCNIK4J
+
+[2560-12-13 10:41:13 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:41:36 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 9444@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:41:55 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35666-35666)
+
+[2560-12-13 10:41:55 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 6916@DESKTOP-KCNIK4J
+
+[2560-12-13 10:41:55 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:42:03 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 6916@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:42:33 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35667-35667)
+
+[2560-12-13 10:42:33 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 13976@DESKTOP-KCNIK4J
+
+[2560-12-13 10:42:33 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:43:25 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 13976@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:43:47 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35668-35668)
+
+[2560-12-13 10:43:47 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 6356@DESKTOP-KCNIK4J
+
+[2560-12-13 10:43:47 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:43:50 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 6356@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:43:53 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 8420@DESKTOP-KCNIK4J
+
+[2560-12-13 10:43:53 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:44:16 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 8420@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:44:34 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 10660@DESKTOP-KCNIK4J
+
+[2560-12-13 10:44:34 #2 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:45:10 #3 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 10660@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:46:21 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35669-35669)
+
+[2560-12-13 10:46:21 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 3608@DESKTOP-KCNIK4J
+
+[2560-12-13 10:46:21 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:46:28 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 3608@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:50:45 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35672-35672)
+
+[2560-12-13 10:50:46 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 12000@DESKTOP-KCNIK4J
+
+[2560-12-13 10:50:46 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:50:56 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 12000@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:51:09 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35673-35673)
+
+[2560-12-13 10:51:09 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 2244@DESKTOP-KCNIK4J
+
+[2560-12-13 10:51:09 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:51:13 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 2244@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:52:55 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35674-35675)
+
+[2560-12-13 10:52:55 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 1116@DESKTOP-KCNIK4J
+
+[2560-12-13 10:52:55 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:52:59 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 1116@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:53:41 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35676-35677)
+
+[2560-12-13 10:53:41 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 12036@DESKTOP-KCNIK4J
+
+[2560-12-13 10:53:41 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:53:54 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 12036@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:55:26 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35678-35681)
+
+[2560-12-13 10:55:26 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 1124@DESKTOP-KCNIK4J
+
+[2560-12-13 10:55:26 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:55:39 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 1124@DESKTOP-KCNIK4J
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-12-13 10:56:30 #1 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' has been recovered (tr. 35651-35655)
+
+[2560-12-13 10:56:30 #2 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is opened by 9092@DESKTOP-KCNIK4J
+
+[2560-12-13 10:56:30 #3 store] 
+Configuration path: C:\Users\terkg\Documents\GitHub\Lahotel\objectdb\objectdb.conf
+
+[2560-12-13 10:56:44 #4 store] 
+Database 'C:\Users\terkg\Documents\GitHub\Lahotel\Lahotel\database\lahotel.odb' is closed by 9092@DESKTOP-KCNIK4J
+

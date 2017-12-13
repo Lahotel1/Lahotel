@@ -88,6 +88,7 @@ public class HomeController implements Initializable {
         BookingController controller = fxmlLoader.<BookingController>getController();
         fxmlLoader.setController(controller);
         controller.setAccount(username);
+        controller.show(username);
         backpane.getChildren().setAll(root);
     }
     public void setAccount(String user){

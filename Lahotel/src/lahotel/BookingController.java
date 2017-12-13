@@ -140,22 +140,31 @@ public class BookingController implements Initializable {
     public void confirm(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Are you sure?");
-        Account account = clicked.getAccount().get(0);
+        Account account = _dataService.getAccount(username);
         List<Room> temp = new ArrayList<Room>();
         temp = clicked.getRoom();
-        String cost = String.format("Booking_ID : %-5s StartDate : %-10s EndDate : %-10s\n%-20s Total : %d", clicked.getId() + "", clicked.getStartdate(), clicked.getEnddate(), clicked.getCost());
+        String cost = String.format("Booking_ID : %-5s StartDate : %-10s EndDate : %-10s\n%s\n Total : %d", clicked.getId() + "", clicked.getStartdate(), clicked.getEnddate(), clicked.getRoomtype(), clicked.getCost());
         alert.setContentText(cost);
+        for (Room room : temp) {
+            System.out.println("a");
+        }
         Optional<ButtonType> result = alert.showAndWait();
         if (result.get() == ButtonType.OK) {
             _dataService.transactionBegin();
-            for (Room room : temp) {
-                room.setIsBook(false);
-            }
-            clicked.setStatus("CANCEL");
-            for (int i = 0; i < temp.size()-1; i++) {
-                clicked.removeRoom(temp.get(0));
+            for (Booking booking : account.getBooking()) {
+                if (booking.getId() == clicked.getId()) {
+                    for (Room room : booking.getRoom()) {
+                        room.setIsBook(false);
+                        room.getBooking().clear();
+                    }
+                    booking.setStatus("CANCEL");
+
+                    booking.getRoom().clear();
+
+                }
             }
             _dataService.transactionCommit();
+            show(username);
         }
     }
 
