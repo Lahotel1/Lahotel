@@ -20,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 
 /**
  *
@@ -38,6 +39,9 @@ public class LoginController implements Initializable {
     
     @FXML
     private Label label;
+    
+     @FXML
+    private VBox vbox;
     
     DataService _dataService = new DataService();
 
@@ -63,7 +67,7 @@ public class LoginController implements Initializable {
                     label.setText("put information");
                 }
                    else
-                label.setText("incorrect");
+                    label.setText("incorrect");
             }
                
         }
