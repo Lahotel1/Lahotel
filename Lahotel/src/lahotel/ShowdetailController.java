@@ -28,9 +28,10 @@ public class ShowdetailController implements Initializable {
       @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
+          
     }
-     void Back(ActionEvent event) throws IOException {
+   @FXML
+    void Back(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         HomeController controller = fxmlLoader.<HomeController>getController();
