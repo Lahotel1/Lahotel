@@ -93,8 +93,12 @@ public class ReserveController implements Initializable {
 
     @FXML
     void checkAvalable(ActionEvent event) {
-
+        
         Boolean canCal = false;
+        single_selector.getItems().clear();
+        duo_selector.getItems().clear();
+        family_selector.getItems().clear();
+        group_selector.getItems().clear();
         room.clear();
         List<Room> temp = new ArrayList<Room>();
         for (Room room1 : temp) {
@@ -214,7 +218,10 @@ public class ReserveController implements Initializable {
             for (Room room1 : booking) {
                 room1.setIsBook(true);
             }
-            account.addBooking(new Booking(account, booking));
+            account.addBooking(new Booking(account, booking,Integer.parseInt(person.getText())));
+            for (Room room1 : booking) {
+                account.getBooking().get(account.getBooking().size()-1).addRoom(room1);
+            }
             _dataService.transactionCommit();
 
         } else {

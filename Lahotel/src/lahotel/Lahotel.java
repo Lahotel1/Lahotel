@@ -37,9 +37,11 @@ public class Lahotel extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        for (int i = 2018; i < 2019; i++) {
-//           
-//            for (int j = 1; j < 3; j++) {
+//        for (int i = 2017; i < 2019; i++) {
+//            int j = 1;
+//            if(i==2017)
+//                j=12;
+//            for (; j < 13; j++) {
 //                if (j == 1 || j == 3 || j == 5 || j == 7 || j == 8 | j == 10 || j == 12) {
 //                    for (int k = 1; k < 32; k++) {
 //                        createroom(k, j, i);

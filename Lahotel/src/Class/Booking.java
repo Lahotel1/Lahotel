@@ -40,12 +40,26 @@ public class Booking implements Serializable {
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Room> room = new ArrayList<Room>();
 
-    public Booking(Account account, List<Room> room) {
+    public Booking(Account account, List<Room> room,int person) {
         this.name = account.getEmail();
+        List<Room> temp = new ArrayList<Room>();
         for (Room room1 : room) {
-            this.roomtype = this.roomtype.concat(room1.getName()+":"+room1.getRoom_id()+"\n");
+            Boolean canAdd = false;
+            for (Room room2 : temp) {
+                if (room1.getRoom_id().equals(room2.getRoom_id())) {
+                    canAdd = true;
+                    break;
+                }
+            }
+            if(canAdd == true)
+            {
+             temp.add(room1);
+            }
         }
-        
+        for (Room room1 : temp) {
+            this.roomtype = this.roomtype.concat(room1.getName() + ":" + room1.getRoom_id() + "\n");
+        }
+
         this.startdate = room.get(0).getDay() + "/" + room.get(0).getMonth() + "/" + room.get(0).getYear();
         this.enddate = room.get(room.size() - 1).getDay() + "/" + room.get(room.size() - 1).getMonth() + "/" + room.get(room.size() - 1).getYear();
         if (room.get(0).getIsAddBed() == true) {
@@ -60,11 +74,14 @@ public class Booking implements Serializable {
         }
         this.isCheckin = false;
         this.status = "NO";
+        this.person = person;
     }
-    public void checkin(){
+
+    public void checkin() {
         this.isCheckin = true;
         this.status = "YES";
     }
+
     public void addRoom(Room room) {
         this.room.add(room);
         room.getBooking().add(this);
